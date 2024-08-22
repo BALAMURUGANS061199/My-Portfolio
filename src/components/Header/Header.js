@@ -116,7 +116,6 @@
 
 // export default Header;
 import React, { useRef, useEffect } from "react";
-import "./../../App.css";
 
 const Header = () => {
   const headerRef = useRef(null);
