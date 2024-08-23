@@ -51,7 +51,12 @@ const Hero = () => {
               >
                 See Portfolio
               </a> */}
-              <button onClick={handleDownload}>Download My Cv</button>
+              <button
+                className="bg-primaryColor text-white font-500 rounded-[8px] flex items-center p-2 "
+                onClick={handleDownload}
+              >
+                Download My Cv
+              </button>
             </div>
 
             <p
