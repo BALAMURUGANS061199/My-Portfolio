@@ -1,7 +1,15 @@
 import React from "react";
 import heroImg from "../../assets/images/hero.svg";
 import CountUp from "react-countup";
+
 const Hero = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `${process.env.PUBLIC_URL}/BALAMURUGAN%20S%20CV.pdf`;
+    link.download = "BALAMURUGAN S CV.pdf";
+    link.click();
+  };
+
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -37,12 +45,13 @@ const Hero = () => {
                   <i class="ri-mail-line"></i> Hire Me
                 </button>
               </a>
-              <a
+              {/* <a
                 href="portfolio"
                 className="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor"
               >
                 See Portfolio
-              </a>
+              </a> */}
+              <button onClick={handleDownload}>Download My Cv</button>
             </div>
 
             <p
