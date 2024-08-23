@@ -147,7 +147,7 @@ const Header = () => {
     window.scrollTo({
       top: location - 80,
       left: 0,
-      behavior: "smooth",
+      // behavior: "smooth",
     });
   };
 
@@ -165,7 +165,7 @@ const Header = () => {
               className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-[500] rounded-full 
               flex items-center justify-center"
             >
-              M
+              BM
             </span>
             <div className="leading-[20px]">
               <h2 className="text-xl text-smallTextColor font-[700]">Bala</h2>
@@ -223,7 +223,7 @@ const Header = () => {
             py-2 px-2 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white hover:font-[500] ease-in duration-300"
           >
             <button>
-              <i className="ri-send-plane-line"></i> Let's Talk
+              <i className="ri-send-plane-line"></i>Let's Talk
             </button>
             <span
               onClick={toggleMenu}
